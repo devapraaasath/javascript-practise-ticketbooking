@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+ 
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Movie Booking</title>  
+    <link rel="stylesheet" href="./css/style-book.css">  
+</head>  
+<body>  
+    <div class="header">
+        Book.io
+    </div>
+    <br>
+    <br>
+    <center>
+    <div class="container">  
+        
+        <div class="booking-form">  
+            <h3>Book Your Tickets</h3>  
+            <form action="#" method="POST">  
+                <label for="cust_name">your name:</label>
+                <input type="text" id="cust_name">
+                <label for="name">movie Name:</label>  
+                <select id="movie_choice" name="movie" required >  
+                    <option value="" disabled selected>select your movie</option>
+                    <option value="kanguva">kanguva</option>  
+                    <option value="lubber_bandthu" >lubber bandthu</option>  
+                    <option value="lucky_basker">lucky basker</option>  
+                    <option  value="Amaran">Amaran</option>  
+                </select>
+                
+                <label for="seats">Number of Seats:</label>  
+                <input type="number" id="seats" name="seats" required min="1">  
+                <label for="showtime">Select Showtime:</label>  
+                <select id="showtime" name="showtime">  
+                    <option value="12:00 PM">12:00 PM</option>  
+                    <option value="3:00 PM">3:00 PM</option>  
+                    <option value="6:00 PM">6:00 PM</option>  
+                    <option value="9:00 PM">9:00 PM</option>  
+                </select>  
+                <button type="button" id="booknow" onclick="booking()">Book Now</button>  
+            </form>  
+           
+        </div> 
+        <br>
+       
+
+        <h3 id="output" >Your Bill Appeare Here</h3>
+
+    </div>
+    </center>
+    <center>
+    <div class="Home">
+        <h2>
+           <a href="./index.html">Home</a>
+        </h2>
+    </div> 
+    </center>
+    <script src="./js/main.js">
+        
+    </script> 
+</body>  
+</html>
